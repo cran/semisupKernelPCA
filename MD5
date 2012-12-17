@@ -1,0 +1,8 @@
+529d2e04a7c5d633b9f06aa55e9a4c83 *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+dfa79c81ff240ee3833c32e432e182b5 *R/functions.R
+3a38f997f5d3babcb086d08dbd1bb1b5 *man/computeCompositeKernel.Rd
+57848171a02e0dafe32d688a9bc3a3c6 *man/computeKernelProjection.Rd
+c9440306e91e600c6c13d11b988d0b78 *man/computeProjectionFromKernel.Rd
+05e425f7fb6257b43347e409551c76b4 *man/computeStandardKernel.Rd
+8fdd9069d444239fa9ee0a26a5a32c02 *man/distortions.Rd
