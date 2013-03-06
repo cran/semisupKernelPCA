@@ -7,7 +7,7 @@ computeProjectionFromKernel
 Compute the kernel PCA projection from an input kernel matrix.
 }
 \usage{
-computeProjectionFromKernel(kernel, dims=2)
+computeProjectionFromKernel(kernel, dims=2, eigentype=c("basic", "irlba"))
 }
 \arguments{
   \item{kernel}{
@@ -15,6 +15,9 @@ n x n kernel matrix
 }
   \item{dims}{
 number of output dimensions for the projection. Cannot exceed n.
+}
+	\item{eigentype}{
+	Indicates the eigendecomposition routine that should be used, either the standard ("basic"), or an optimization for the extraction of a few major eigenpairs ("irlba")
 }
 }
 \value{
@@ -32,7 +35,7 @@ computeStandardKernel
 \examples{
 data(iris)
 irisdat <- as.matrix(iris[,1:4])
-kernel <- computeStandardKernel(irisdat)
+kernel <- computeKernel(irisdat)
 proj <- computeProjectionFromKernel(kernel)
 }
 

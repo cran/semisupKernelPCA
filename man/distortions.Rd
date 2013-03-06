@@ -29,14 +29,14 @@ Pierrick Bruneau
 Aupetit, M. (2007) Visualizing distortions and recovering topology in continuous projection techniques. \emph{Neurocomputing}. Pages 1304-1330.
 }
 \seealso{
-computeCompositeKernel
+computeKernel
 computeProjectionFromKernel
 }
 \examples{
 data(iris)
 irisdat <- as.matrix(cbind(iris[,1:4], rep(NA, 150)))
 irisdat[sample(1:150,4),5] <- 1:4
-proj <- computeKernelProjection(irisdat)
+proj <- computeProjectionFromKernel(computeKernel(irisdat))
 dists <- distortions(irisdat[,1:4], proj)
 }
 
